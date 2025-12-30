@@ -1,0 +1,14 @@
+<!-- <p>Remote's profile-view works!</p> -->
+
+<div style="border: 2px dashed blue; padding: 10px;">
+  <h3>Remote's profile-view works!</h3>
+
+  <p>Current User from Shared Service: <strong>{{ shared.userName() }}</strong></p>
+  
+  <nav>
+    <a routerLink="details">Go to Detailed Info</a>
+  </nav>
+
+  <hr>
+  <router-outlet></router-outlet>
+</div>

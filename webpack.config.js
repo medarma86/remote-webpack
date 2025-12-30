@@ -4,12 +4,9 @@ module.exports = withModuleFederationPlugin({
 
   name: 'remote-webpack',
 
-  // exposes: {
-  //   './Component': './src\app\app.ts',
-  // },
-
   exposes: {
-    './ProfileView': './src/app/profile-view/profile-view.ts',
+    './profile-feature': './src/app/profile/profile.routes.ts',
+    './data-service': './src/app/profile/shared-data.service.ts',
   },
 
   shared: {

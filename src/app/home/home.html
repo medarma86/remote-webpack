@@ -1,1 +1,7 @@
 <p>Remote's home works!</p>
+
+<div class="remote-controls" style="border: 2px solid green; padding: 10px;">
+  <h4>Remote App Control Panel</h4>
+  <input #remoteInput type="text" placeholder="Update name from Remote...">
+  <button (click)="updateName(remoteInput.value)">Update State</button>
+</div>
